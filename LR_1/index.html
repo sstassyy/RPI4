@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="new-task.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="task-area.css">
+    <link rel="stylesheet" href="clear-button.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Список задач</h1>
+        </header>
+
+        <section class="new-task">
+            <h2>Новая задача</h2>
+            <input type="text" placeholder="Название задачи...">
+            <button class="add-button">Добавить</button>
+        </section>
+
+        <section class="tasks">
+            <article class="column backlog">
+                <div class="column-header">
+                    <h3>Бэклог</h3>
+                </div>
+                <ul>
+                    <li class="task">Выучить JS</li>
+                    <li class="task">Выучить React</li>
+                    <li class="task">Сделать домашку</li>
+                </ul>
+            </article>
+
+            <article class="column in-progress">
+                <div class="column-header">
+                    <h3>В процессе</h3>
+                </div>
+                <ul>
+                    <li class="task">Выпить смузи</li>
+                    <li class="task">Попить воды</li>
+                </ul>
+            </article>
+
+            <article class="column done">
+                <div class="column-header">
+                    <h3>Готово</h3>
+                </div>
+                <ul>
+                    <li class="task">Позвонить маме</li>
+                    <li class="task">Погладить кота</li>
+                </ul>
+            </article>
+
+            <article class="column trash">
+                <div class="column-header">
+                    <h3>Корзина</h3>
+                </div>
+                <ul>
+                    <li class="task">Сходить погулять</li>
+                    <li class="task">Прочитать Войну и Мир</li>
+                </ul>
+                <button class="clear-button">Очистить</button>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
