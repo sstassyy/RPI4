@@ -1,0 +1,79 @@
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    width: 23%;
+    box-sizing: border-box;
+}
+
+.column-header {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.backlog .column-header {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.in-progress .column-header {
+    background-color: #bbdefb;
+    color: #0d47a1;
+}
+
+.done .column-header {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.trash .column-header {
+    background-color: #ffc1e3;
+    color: #ad1457;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    background-color: white;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.column ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.column.backlog ul li::before {
+    background-color: #f0f0f0;
+}
+
+.column.in-progress ul li::before {
+    background-color: #bbdefb;
+}
+
+.column.done ul li::before {
+    background-color: #c8e6c9;
+}
+
+.column.trash ul li::before {
+    background-color: #ffc1e3;
+}
